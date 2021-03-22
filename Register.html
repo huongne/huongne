@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">    <!-- Engligh language, en stands for engligh--> 
+<head>
+
+  <title>webpage 1</title>  <!-- you need a title for your webpage ! -->
+  <meta charset="utf-8">    <!-- Character set of English -->
+
+  <!-- if you are using a bootstrap - we need some external links to be linked to yur webpage -->
+  <!-- because, bootstrap includes CSS, JAvascripts, html --->
+  <!-- we need to compulsorily copypaste few LINKS of bootstrap -->
+  <!-- they are called CDN links -->
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- CDN link for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  body { background:white ;}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://scontent.fhan2-5.fna.fbcdn.net/v/t1.0-9/124158063_1451475908375231_4752147425807088028_o.jpg?_nc_cat=107&ccb=1-3&_nc_sid=0debeb&_nc_ohc=hYt7AsneN6oAX-QZGR4&_nc_ht=scontent.fhan2-5.fna&oh=02a57339d3bf295d6ad00035ca8d8f6f&oe=607D09FBss");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+  #more {display: none;}
+
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #000099;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #000099;
+  color: #000099;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+.footer {
+  position: fixed;    
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+  </style>
+
+  <!-- NAV BAR codes -->
+<body style="height:1000px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="Webpage 1.html">FPT UNIVERSITY</a>
+  <ul class="navbar-nav ml-auto">  <!-- i need my menus on top right -->
+    <!-- ml-auto stands for MARGIN LEFT -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="Webpage 1.html">Invitation</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="about us.html">Information</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="galleryyy.html">Events</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">School'S Clubs</a>
+    </li>
+  </ul>
+  <!-- after the navbar code, I have inserted a code for SEARCH -->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+</nav>
+
+
+ <!-- NAV BAR ends here -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<section>
+    <div class="container">
+  <div style="text-align:center">
+    <h2>Register Now</h2>
+    <p>Have a good day</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/80091185_3118090501539702_2376846498018099200_o.jpg?_nc_cat=104&ccb=1-3&_nc_sid=cdbe9c&_nc_ohc=sUfGCqjAPsEAX-gGhhd&_nc_ht=scontent.fhan2-4.fna&oh=09452ad1e104898776256753dc2635db&oe=6076BBF7" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">FPT University</label>
+        <select id="country" name="FPT University">
+          <option value="australia">Hoa Lac</option>
+          <option value="canada">TP Ho Chi Minh</option>
+          <option value="usa">Da Nang</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!----------------- Footer ------------------->
+
+<div class="footer">
+  <br>
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+<a href="https://www.youtube.com" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+
+  
+  <p class="pt-2"> copyright 2020 </p>
+
+</div>
+
+</body>
+
+
+
+
+</html>
+
+
